@@ -101,9 +101,6 @@ def get_image_files(folder):
         for path in folder.rglob("*")
         if path.is_file() and path.suffix.lower() in IMAGE_EXTENSIONS)
 
-KAFKA_BOOTSTRAP_SERVERS = "localhost:9092"
-TOPIC_DRONE_FRAMES = "drone-frames"
-TOPIC_PREDICTIONS = "fire-predictions"
 
 def seed_everything(seed=SEED):
     random.seed(seed)
